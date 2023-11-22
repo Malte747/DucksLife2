@@ -3,9 +3,8 @@ using UnityEngine;
 public class BirdController : MonoBehaviour
 {
     public float jumpForce = 10f;
-    public float maxJumpHeight = 5f; // Set your desired maximum jump height
-    public Transform groundCheck;
-    public LayerMask groundLayer;
+    public float minHeight = 0f;
+    public float maxHeight = 10f;
 
     private Rigidbody rb;
 
@@ -16,31 +15,38 @@ public class BirdController : MonoBehaviour
 
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.Space) && IsBelowMaxHeight())
+        if (Input.GetKeyDown(KeyCode.Space))
         {
             Jump();
         }
     }
 
-    private void OnTriggerEnter(Collider other) {
+    private void OnTriggerEnter(Collider other)
+    {
         if (other.gameObject.CompareTag("Obstacle"))
         {
             Destroy(gameObject);
-        } 
+        }
     }
-
 
     void Jump()
     {
-        rb.velocity = new Vector2(rb.velocity.x, jumpForce);
-    }
-
-    bool IsBelowMaxHeight()
-    {
-        // Check if the bird's current Y position is below the maximum jump height
-        return transform.position.y < maxJumpHeight;
+        // Check the current height during the jump and limit it to the specified maximum
+        if (transform.position.y < maxHeight)
+        {
+            rb.velocity = new Vector3(rb.velocity.x, jumpForce, rb.velocity.z);
+        }
     }
 }
+
+
+
+
+
+
+
+
+
 
 
 
