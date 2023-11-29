@@ -4,6 +4,7 @@ public class BirdController : MonoBehaviour
 {
     public float jumpForce = 10f;
     public float maxHeight = 10f;
+    public float minHeight = -19f;
     public float Tauchen = -10;
     private Animator anim;
 
@@ -68,8 +69,11 @@ public class BirdController : MonoBehaviour
 
     void Dive()
     { 
+        if (transform.position.y < minHeight)
+    {
         rb.velocity = new Vector3(rb.velocity.x, Tauchen, rb.velocity.z);
          anim.SetBool("Swim", true);
+    }
     }
 }
 
