@@ -296,7 +296,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 8f4390f2a12fec94193120500f29b763, type: 2}
+  - {fileID: 2100000, guid: 2ec79b68991a3ab4a8d4e0a79eddd663, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -335,8 +335,8 @@ Transform:
   m_GameObject: {fileID: 235311608}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0.7071068, z: 0.7071068, w: 0}
-  m_LocalPosition: {x: -41.1, y: 1.2, z: 97.7}
-  m_LocalScale: {x: 16.50404, y: 1, z: 8.928652}
+  m_LocalPosition: {x: -41.1, y: 3.5, z: 97.7}
+  m_LocalScale: {x: 10.932442, y: 1, z: 5.1689754}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -627,7 +627,7 @@ Transform:
   m_GameObject: {fileID: 700003621}
   serializedVersion: 2
   m_LocalRotation: {x: 0.0023161473, y: -0.707103, z: 0.707103, w: -0.0023161464}
-  m_LocalPosition: {x: -38.17, y: 0.38, z: 20.5}
+  m_LocalPosition: {x: -32, y: 0.45, z: 20.5}
   m_LocalScale: {x: 5.244427, y: 1, z: 4.143899}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -800,7 +800,7 @@ Camera:
     height: 1
   near clip plane: 0.3
   far clip plane: 1000
-  field of view: 36
+  field of view: 26.3
   orthographic: 0
   orthographic size: 8.16
   m_Depth: -1
@@ -827,7 +827,7 @@ Transform:
   m_GameObject: {fileID: 963194225}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -38.7, y: 1.07, z: -9}
+  m_LocalPosition: {x: -43.48, y: 1.07, z: -9}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -1211,7 +1211,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 5ba6cfb222cd43443b64fdf6890fe11d, type: 2}
+  - {fileID: 2100000, guid: 34c63ca73be1a5741a9b04dacfac4aa8, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -1305,9 +1305,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   jumpForce: 5
-  maxHeight: 9
-  minHeight: -8
-  Tauchen: -10
+  maxHeight: 7
+  minHeight: -7
+  Tauchen: -5
 --- !u!54 &1848649041
 Rigidbody:
   m_ObjectHideFlags: 0

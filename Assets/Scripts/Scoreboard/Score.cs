@@ -16,13 +16,13 @@ public class Score : MonoBehaviour
     }
     void Start()
     {
-        coinText.text = "Counter: " + currentCoins.ToString();
+        coinText.text = "Score: " + currentCoins.ToString();
     }
 
     public void IncreaseCoins(int v)
     {
         currentCoins += v;
-        coinText.text = "Counter: " + currentCoins.ToString();
+        coinText.text = "Score: " + currentCoins.ToString();
     }
   
 }

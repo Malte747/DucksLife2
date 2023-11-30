@@ -26,7 +26,7 @@ public class BirdController : MonoBehaviour
                     
                 }
 
-            else if (Input.GetKey(KeyCode.Space) && gameObject.transform.position.y <= 0)
+            else if (Input.GetKey(KeyCode.Space) && gameObject.transform.position.y <= 0 && gameObject.transform.position.y >= minHeight)
                 {
                     Dive();
                    
@@ -34,7 +34,12 @@ public class BirdController : MonoBehaviour
             else if(gameObject.transform.position.y <= 0)
                 {
                     rb.velocity = new Vector3(rb.velocity.x, jumpForce, rb.velocity.z);
+                     
                 }
+            if (gameObject.transform.position.y <= -1)
+            {
+                anim.SetBool("Swim", true);
+            }
 
             if(gameObject.transform.position.y == 0)
                 {
@@ -64,16 +69,15 @@ public class BirdController : MonoBehaviour
             {
                 rb.velocity = new Vector3(rb.velocity.x, jumpForce, rb.velocity.z);
                 anim.SetTrigger("Jump");
+                anim.SetBool("Swim", false);
             }
     }
 
     void Dive()
     { 
-        if (transform.position.y < minHeight)
-    {
+    
         rb.velocity = new Vector3(rb.velocity.x, Tauchen, rb.velocity.z);
-         anim.SetBool("Swim", true);
-    }
+        
     }
 }
 
