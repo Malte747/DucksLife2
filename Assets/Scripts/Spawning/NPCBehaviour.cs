@@ -6,6 +6,24 @@ public class NPCBehaviour : MonoBehaviour
 {
     public float speed = 5.0f; // Geschwindigkeit des NPC
     public int value = 1;
+
+
+
+
+ void Start()
+    {
+        // Erhalte die aktuelle Rotation des GameObjects
+        Vector3 currentRotation = transform.rotation.eulerAngles;
+
+        // Ändere die Rotation auf der X-Achse um -90 Grad
+        currentRotation.x = -90f;
+
+        // Setze die neue Rotation
+        transform.rotation = Quaternion.Euler(currentRotation);
+    }
+
+
+
     void Update()
     {
         // Bewege den NPC nach links basierend auf der Geschwindigkeit

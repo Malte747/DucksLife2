@@ -379,7 +379,7 @@ Transform:
   m_GameObject: {fileID: 268226583}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 18.385038, y: -11.403853, z: 6.702606}
+  m_LocalPosition: {x: 18.385038, y: -8.21, z: 6.702606}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -410,7 +410,7 @@ Transform:
   m_GameObject: {fileID: 285090536}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 18.385038, y: 0.5961466, z: 6.702606}
+  m_LocalPosition: {x: 18.385038, y: -1.67, z: 6.702606}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -441,7 +441,7 @@ Transform:
   m_GameObject: {fileID: 465263936}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 18.385038, y: -3.403853, z: 6.702606}
+  m_LocalPosition: {x: 18.385038, y: -2.54, z: 6.702606}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -964,7 +964,7 @@ Transform:
   m_GameObject: {fileID: 1250710637}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 18.385038, y: -7.403853, z: 6.702606}
+  m_LocalPosition: {x: 18.385038, y: -7.32, z: 6.702606}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -1002,7 +1002,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   waves:
   - name: Wave 1
-    enemy: {fileID: 7536354911451509644, guid: 5fe07b641953adb46a2de4df5158eac5, type: 3}
+    enemy: {fileID: 8484780709728937143, guid: 3043152440fbfcb4a8465a19015b8db6, type: 3}
     count: 5
     rate: 1
   spawnPoints:
@@ -1012,7 +1012,7 @@ MonoBehaviour:
   - {fileID: 1250710638}
   - {fileID: 268226584}
   - {fileID: 1696455278}
-  timeBetweenWaves: 0
+  timeBetweenWaves: 1
 --- !u!4 &1374431462
 Transform:
   m_ObjectHideFlags: 0
@@ -1049,9 +1049,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   waves:
   - name: 
-    enemy: {fileID: 5293859754379250875, guid: df76671eac495a64facb85b0ee181c66, type: 3}
+    enemy: {fileID: 2450506445898273325, guid: ec0664ece9b83734591ed20e185a846d, type: 3}
     count: 5
-    rate: 0.5
+    rate: 0.7
   spawnPoints:
   - {fileID: 2045453449}
   - {fileID: 285090537}
@@ -1059,7 +1059,7 @@ MonoBehaviour:
   - {fileID: 1250710638}
   - {fileID: 268226584}
   - {fileID: 1696455278}
-  timeBetweenWaves: 1
+  timeBetweenWaves: 0
 --- !u!1 &1605028213
 GameObject:
   m_ObjectHideFlags: 0
@@ -1153,7 +1153,7 @@ Transform:
   m_GameObject: {fileID: 1696455277}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 18.385038, y: -15.40385, z: 6.702606}
+  m_LocalPosition: {x: 18.385038, y: -9.54, z: 6.702606}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -1409,7 +1409,7 @@ Transform:
   m_GameObject: {fileID: 2045453448}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 18.385038, y: 4.5961466, z: 6.702606}
+  m_LocalPosition: {x: 18.385038, y: -0.38, z: 6.702606}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
